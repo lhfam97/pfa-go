@@ -13,7 +13,8 @@ func TestGivenAnEmptyId_WhenCreateANewOrder_ThenShouldReceiveAndError(t *testing
 	// if order.ID != "" {
 	// 	t.Errorf("Expected empty ID, but goes %s", order.ID)
 	// }
-	assert.Error(t, order.isValid(), "invalid id")
+
+	assert.Error(t, order.IsValid(), "invalid id")
 }
 
 func TestGivenAnEmptyPrice_WhenCreateANewOrder_ThenShouldReceiveAndError(t *testing.T) {
