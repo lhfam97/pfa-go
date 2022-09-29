@@ -11,13 +11,13 @@ O Prometheus fica acessando o rabbitmq a cada tanto segundos e pega as metricas 
 
 ## Passos para execução do desafio
 
-###1 - Passo > Subir os containers no docker
+<h3>1 - Passo > Subir os containers no docker</h3>
 
 ```bash
 docker-compose up -d
 ```
 
-###2 - Passo > Acessar o Prometheus na porta 9090
+<h3>2 - Passo > Acessar o Prometheus na porta 9090</h3>
 
 - Config prometheus.yml
 <img  src="./assets/prometheus-config.png"/>
@@ -28,7 +28,7 @@ docker-compose up -d
 <img  src="./assets/prometheus-analysis.png"/>
 
 
-###3 - Passo > Acessar o Grafana na porta 3000
+<h3>3 - Passo > Acessar o Grafana na porta 3000</h3>
 Logar com o username admin e senha admin.
 Apos isso eh necessario configurar o grafana pra acessar o prometheus e buscar as informacoes do rabbitmq
 
@@ -55,7 +55,7 @@ Apos isso eh necessario configurar o grafana pra acessar o prometheus e buscar a
 <img src="./assets/import_dashboard_pt2.png"/>
 
 
-###4 - Passo > Acessar o Rabbitmq na porta 15672
+<h3>4 - Passo > Acessar o Rabbitmq na porta 15672</h3>
 - Logar com o username guest e senha guest e criar a fila de maneira manual
 
 - Ir na aba queue e adicionar a fila orders
@@ -69,9 +69,9 @@ Apos isso eh necessario configurar o grafana pra acessar o prometheus e buscar a
 Ao mandar uma mensagem pro rabbitmq vc manda ela pra uma exchange e essa exchange manda a mensagem pra sua respectiva fila. Vc precisa conectar a fila na exchange
 
 
-###5 - Passo > Acessar o go_app e executar os producers
+<h3>5 - Passo > Acessar o go_app e executar os producers</h3>
 
-###6 - Passo > Acessar o go_app e executar os producers
+<h3>6 - Passo > Acessar o go_app e executar os producers</h3>
 
 
 ```bash
