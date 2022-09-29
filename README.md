@@ -2,7 +2,7 @@
   <a href="https://fullcycle.com.br/" target="blank"><img src="https://fullcycle.com.br/wp-content/themes/fullcycle/assets/images/fullcycle-logo.svg"/></a>
 </p>
 
-# PGA Go
+# PFA Go
 
 ## Descrição do Projeto
 
