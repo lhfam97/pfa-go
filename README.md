@@ -18,6 +18,10 @@ docker-compose up -d
 ```
 
 2 - Passo > Acessar o Prometheus na porta 9090
+
+- Config prometheus.yml
+<img alt="config prometheus" src="./assets/prometheus.png"/>
+
 Ir na aba status/targets e analisar que o prometheus esta vivisualindo o rabbitmqq
 
 3 - Passo > Acessar o Grafana na porta 3000

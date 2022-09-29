@@ -8,6 +8,7 @@ func OpenChannel() (*amqp.Channel, error) {
 		panic(err)
 	}
 	ch, err := conn.Channel()
+	// Qos diz quantas mensagens podem ser lidas de uma vez mais, e nao pode mandar mais msgs enquanto as primeiras 100 nao forem processadas
 	ch.Qos(100, 0, false)
 	if err != nil {
 		panic(err)

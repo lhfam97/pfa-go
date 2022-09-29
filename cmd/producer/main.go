@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"math/rand"
 
 	"github.com/google/uuid"
@@ -41,11 +42,13 @@ func Notify(ch *amqp.Channel, order Order) error {
 func main() {
 	conn, err := amqp.Dial("amqp://guest:guest@rabbitmq:5672/")
 	if err != nil {
+		fmt.Println(`aquqi`)
 		panic(err)
 	}
 	defer conn.Close()
 	ch, err := conn.Channel()
 	if err != nil {
+		fmt.Println(`auiq 2`)
 		panic(err)
 	}
 	defer ch.Close()
