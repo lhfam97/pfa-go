@@ -22,7 +22,11 @@ docker-compose up -d
 - Config prometheus.yml
 <img alt="config prometheus" src="./assets/prometheus.png"/>
 
-Ir na aba status/targets e analisar que o prometheus esta vivisualindo o rabbitmqq
+- Ir na aba status/targets e analisar que o prometheus esta visualzando o rabbitmq
+
+<img alt="caminho da aba de targets" src="./assets/prometheus-target.png"/>
+<img alt="imagem monitorando o rabbitmq" src="./assets/prometheus-analysis.png"/>
+
 
 3 - Passo > Acessar o Grafana na porta 3000
 Logar com o username admin e senha admin.
