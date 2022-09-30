@@ -66,18 +66,41 @@ Apos isso eh necessario configurar o grafana pra acessar o prometheus e buscar a
 <img src="./assets/bind_exchange_queue_pt1.png"/>
 <img src="./assets/bind_exchange_queue_pt2.png"/>
  
-Ao mandar uma mensagem pro rabbitmq vc manda ela pra uma exchange e essa exchange manda a mensagem pra sua respectiva fila. Vc precisa conectar a fila na exchange
 
 </br>
 <h3>5 - Passo > Acessar o go_app e executar os producers</h3>
 
+<img src="./assets/executar_bash_container_goapp.png"/>
+<img src="./assets/comando_executando_producer.png"/>
+
+```bash
+   go run cmd/producer/main.go
+```
+
+- Analisar no grafana após execução do producer:
+
+<img src="./assets/rabbitmq_grafana_after_producer,png"/>
+
+
 </br>
 <h3>6 - Passo > Acessar o go_app e executar os producers</h3>
 
+<img src="./assets/executar_bash_container_goapp.png"/>
 
 ```bash
- docker run -it --rm luique97/codeeducation:latest
+   go run cmd/main.go
 ```
+
+- Imagem do grafana após funcionamento do consumer
+
+<img src="./assets/analisando_apos_executar_consumers.png"/>
+
+
+<h3>7 - Passo > Acessar MySql e ver se as orders estão sendo cadastradas</h3>
+
+<img src="./assets/connection_postgres.png"/>
+
+<img src="./assets/database_mysqql.png"/>
 
 # Author
 
