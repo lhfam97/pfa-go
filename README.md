@@ -79,7 +79,7 @@ Apos isso eh necessario configurar o grafana pra acessar o prometheus e buscar a
 
 - Analisar no grafana após execução do producer:
 
-<img src="./assets/rabbitmq_grafana_after_producer,png"/>
+<img src="./assets/rabbitmq_grafana_after_producer.png"/>
 
 
 </br>
